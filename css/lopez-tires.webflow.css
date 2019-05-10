@@ -111,17 +111,17 @@ p {
 }
 
 .button.tab:hover {
-  background-color: #2e80b6;
+  background-color: #e47972;
 }
 
 .button.tab.w--current {
-  background-color: #2e80b6;
+  background-color: red;
 }
 
 .navigation-link {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  color: #676770;
+  color: #35353b;
 }
 
 .navigation-link:hover {
@@ -157,13 +157,14 @@ p {
 
 .section {
   position: relative;
-  padding: 80px 10px;
+  padding: 40px 10px;
   background-color: #fff;
+  opacity: 1;
   text-align: center;
 }
 
 .section.accent {
-  background-color: #192024;
+  background-color: red;
 }
 
 .white-box {
@@ -187,30 +188,30 @@ p {
 .hero-section.centered {
   padding-top: 195px;
   padding-bottom: 195px;
-  border-bottom: 4px solid #69b9ff;
-  background-image: url('../images/LopezTires_enginePicture.jpg'), -webkit-gradient(linear, left top, left bottom, from(rgba(46, 157, 255, .5)), to(rgba(46, 157, 255, .22)));
-  background-image: url('../images/LopezTires_enginePicture.jpg'), linear-gradient(180deg, rgba(46, 157, 255, .5), rgba(46, 157, 255, .22));
+  border-bottom: 4px none #69b9ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 58%, 70%, .5)), to(hsla(0, 58%, 70%, .5))), url('../images/LopezTires_enginePicture.jpg');
+  background-image: linear-gradient(180deg, hsla(0, 58%, 70%, .5), hsla(0, 58%, 70%, .5)), url('../images/LopezTires_enginePicture.jpg');
   background-position: 0px 0px, 0px 0px;
-  background-size: cover, auto;
+  background-size: auto, cover;
   text-align: center;
 }
 
 .hero-heading {
   margin-bottom: 30px;
   color: #fff;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 300;
+  font-size: 100px;
+  line-height: 80px;
+  font-weight: 600;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .hero-subheading {
   margin-bottom: 40px;
-  color: #2e9dff;
+  color: #fff;
   font-size: 25px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -247,9 +248,10 @@ p {
 }
 
 .section-heading.centered {
+  margin-bottom: 20px;
   color: #676770;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -257,12 +259,14 @@ p {
 
 .section-heading.centered.white {
   color: #fff;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .section-subheading.center {
-  color: #8e8e9c;
+  color: #676770;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -292,6 +296,7 @@ p {
 .footer {
   padding-top: 35px;
   padding-bottom: 35px;
+  background-color: #370c0c;
 }
 
 .footer.center {
@@ -312,10 +317,11 @@ p {
   width: 35%;
   margin: 20px auto;
   padding: 20px;
-  border: 10px solid #fff;
-  border-radius: 50%;
-  background-color: #69b9ff;
-  box-shadow: 0 0 0 1px #2e9dff;
+  border: 0px none #fff;
+  border-radius: 30% 0%;
+  background-color: red;
+  box-shadow: 0 0 0 2px red;
+  opacity: 1;
 }
 
 .info-icon {
@@ -339,6 +345,7 @@ p {
 
 .footer-link.with-icon {
   margin-left: 30px;
+  color: #fff;
 }
 
 .tab-menu {
@@ -355,9 +362,11 @@ p {
   margin-bottom: 20px;
 }
 
-.white-text {
+.tires_header {
   margin-bottom: 20px;
   color: #fff;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .form {
@@ -367,6 +376,180 @@ p {
 .link-block {
   background-image: url('../images/logo.png');
   background-position: 0px 0px;
+}
+
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #ec6a6a 27%, #fff 74%);
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utility-page-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.button-2 {
+  margin-top: 10px;
+}
+
+.text-block {
+  padding-left: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.contact_page.center {
+  color: #676770;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contact_page.center.off-white {
+  padding-bottom: 0px;
+  color: #e8e8e8;
+}
+
+.text-in-red.center {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.text-in-red.center.off-white {
+  padding-bottom: 0px;
+  color: #e8e8e8;
+}
+
+.tire_images {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  color: #676770;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.heading {
+  color: #fff;
+}
+
+.paragraph-2 {
+  color: #fff;
+}
+
+.heading-2 {
+  color: #fff;
+}
+
+.tires_text {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.heading-3 {
+  font-weight: 400;
+}
+
+.heading-4 {
+  font-weight: 400;
+}
+
+.heading-5 {
+  font-weight: 400;
+}
+
+.paragraph-3 {
+  color: #676770;
+  font-weight: 400;
+}
+
+.paragraph-4 {
+  color: #676770;
+  font-weight: 400;
+}
+
+.paragraph-5 {
+  color: #676770;
+  font-weight: 400;
+}
+
+.paragraph-6 {
+  color: #676770;
+  font-weight: 400;
+}
+
+.heading-6 {
+  font-weight: 400;
+}
+
+.heading-7 {
+  font-weight: 400;
+}
+
+.paragraph-7 {
+  color: #676770;
+  font-weight: 400;
+}
+
+.heading-8 {
+  font-weight: 400;
+}
+
+.container {
+  margin-bottom: 40px;
 }
 
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
@@ -488,6 +671,12 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   }
   .grid-image {
     width: 35%;
+  }
+  .contact_page.center {
+    line-height: 30px;
+  }
+  .text-in-red.center {
+    line-height: 30px;
   }
 }
 
