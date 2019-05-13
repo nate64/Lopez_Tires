@@ -620,6 +620,15 @@ p {
   color: #985f43;
 }
 
+.link {
+  margin-left: 0px;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
   opacity: 0;
   -webkit-transform: translate(0px, 50px);
