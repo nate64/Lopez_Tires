@@ -111,7 +111,7 @@ p {
 }
 
 .button.tab:hover {
-  background-color: #e47972;
+  background-color: #e47971;
 }
 
 .button.tab.w--current {
@@ -178,6 +178,8 @@ p {
 }
 
 .section.accent {
+  margin-right: 20px;
+  margin-left: 20px;
   background-color: red;
 }
 
@@ -200,11 +202,13 @@ p {
 }
 
 .hero-section.centered {
+  margin-right: 20px;
+  margin-left: 20px;
   padding-top: 195px;
   padding-bottom: 195px;
   border-bottom: 4px none #69b9ff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 58%, 70%, .5)), to(hsla(0, 58%, 70%, .5))), url('../images/LopezTires_enginePicture.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 58%, 70%, .5), hsla(0, 58%, 70%, .5)), url('../images/LopezTires_enginePicture.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 134, 134, 0.5)), to(rgba(223, 134, 134, 0.5))), url('../images/LopezTires_enginePicture_382kb.jpg');
+  background-image: linear-gradient(180deg, rgba(223, 134, 134, 0.5), rgba(223, 134, 134, 0.5)), url('../images/LopezTires_enginePicture_382kb.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   text-align: center;
@@ -300,7 +304,7 @@ p {
   margin-bottom: 17px;
   border: 0px solid #000;
   border-radius: 3px;
-  box-shadow: 0 0 0 1px rgba(64, 64, 71, .3);
+  box-shadow: 0 0 0 1px rgba(64, 64, 71, 0.3);
 }
 
 .form-field.text-area {
@@ -310,7 +314,7 @@ p {
 .footer {
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: #5b5757;
+  background-color: #5c5959;
 }
 
 .footer.center {
@@ -354,7 +358,7 @@ p {
 }
 
 .footer-link:hover {
-  color: rgba(0, 140, 255, .84);
+  color: rgba(0, 140, 255, 0.84);
 }
 
 .footer-link.with-icon {
@@ -409,7 +413,7 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(45deg, #ec6a6a 27%, #fff 74%);
+  background-image: linear-gradient(45deg, #ec6c6c 27%, #fff 74%);
 }
 
 .utility-page-content {
@@ -617,7 +621,7 @@ p {
 
 .navbar-2 {
   background-color: #fff;
-  color: #985f43;
+  color: #996043;
 }
 
 .link {
@@ -627,6 +631,10 @@ p {
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
+}
+
+.body {
+  background-color: #fff;
 }
 
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
@@ -680,7 +688,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 @media (max-width: 991px) {
   .navigation-link {
-    color: hsla(0, 0%, 100%, .52);
+    color: hsla(0, 0%, 100%, 0.52);
   }
   .navigation-link.w--current {
     color: #fff;
